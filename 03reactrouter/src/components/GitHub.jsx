@@ -29,7 +29,7 @@ function GitHub() {
         </div>
 
       </div>
-    </div> : <div className="h-screen flex justify-center items-center capitalize text-3xl text-orange-700">Not fetch GitHub Data </div>}
+    </div> : <div className="h-screen flex justify-center items-center capitalize text-5xl text-orange-700">Not fetch GitHub Data </div>}
     </>
   )
 }
