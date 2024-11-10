@@ -11,7 +11,7 @@ function Loginform() {
     }
     return (
         <div className="w-screen flex justify-center items-center bg-gray-200">
-            <form className="flex flex-col py-14 my-14 gap-y-7 items-center justify-center bg-gray-300 h-1/2 w-1/2" onSubmit={loginFun}>
+            <form className="flex flex-col py-14 mb-6 gap-y-7 items-center justify-center bg-gray-300 h-1/2 w-1/2 max-lg:w-3/4 max-sm:w-full" onSubmit={loginFun}>
                 <div className="w-full flex justify-center items-center">
                     <label className="mr-3 text-xl text-orange-700 font-semibold" htmlFor="username">Username:</label>
                     <input className="h-12 px-5 py-2 text-xl outline-none w-1/2" type="text" id="username" value={userName} onChange={(e) => { setUserName(e.target.value) }} placeholder="Enter username" required/>
