@@ -1,16 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import App from './App.jsx'
+ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import GitHub from './components/GitHub';
 import GitUser from './components/GitUser.jsx';
 import {gitFetchData} from './components/GitFetchData.js';
+import Login from './components/Login';
 
-const router = createBrowserRouter(
+/* const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<App/>}>
         <Route path="" element={<Home/>} />
@@ -20,8 +21,8 @@ const router = createBrowserRouter(
         <Route path='user/:userId' element={<GitUser/>}/>
       </Route>
     )
-)
-/* const router = createBrowserRouter([
+) */
+const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
@@ -29,6 +30,10 @@ const router = createBrowserRouter(
       {
         path: "",
        element: <Home/>
+      },
+      {
+        path: '/login',
+       element: <Login/>
       },
       {
         path: '/about',
@@ -42,10 +47,14 @@ const router = createBrowserRouter(
         path: '/github',
        element:<GitHub/>,
        loader:()=>gitFetchData()
+       },
+      {
+        path: '/gituser/:userId',
+       element:<GitUser/>
        }
     ]
   }
-]) */
+])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
