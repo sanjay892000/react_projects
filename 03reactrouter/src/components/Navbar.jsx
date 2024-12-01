@@ -1,13 +1,14 @@
 /* import { Link } from "react-router-dom"; */
 import { Link, NavLink } from 'react-router-dom'
 import sunlogo from '../assets/sunlogo.png'
-import { useMyTheme } from '../context/themeMode'
+/* import { useMyTheme } from '../context/themeMode' */
 import { IconButton } from '@mui/material'
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import { useEffect, useState } from 'react';
 function Navbar() {
 
-    const { themeMode, lightMode, darkMode } = useMyTheme()
+  /*   const { themeMode, lightMode, darkMode } = useMyTheme()
 
     const changeMode = ()=>{
         if(themeMode ==='light'){
@@ -16,7 +17,21 @@ function Navbar() {
         else{
             lightMode()
         }
-    }
+    } */
+
+        const [themeMode, setThemeMode] = useState('light')
+        const changeMode = () => {
+           const newTheme = themeMode === 'light' ? "dark" : "light";
+           setThemeMode(newTheme)
+           localStorage.setItem('theme', newTheme)
+        }
+
+        useEffect(() => {
+            const changeTheme = localStorage.getItem('theme');
+            const myHTML = document.querySelector('html')
+            myHTML.classList.remove('light', 'dark')
+            myHTML.classList.add(changeTheme)
+          }, [themeMode])
 
     return (
         <header className="shadow-lg sticky z-50 top-0">

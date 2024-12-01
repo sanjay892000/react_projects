@@ -13,13 +13,13 @@ import Contact from './components/Contact';
 import GitHub from './components/GitHub';
 import { gitFetchData } from './components/GitFetchData';
 import GitUser from './components/GitUser'; */
-import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import { ThemeStateProvider } from './context/themeMode';
+/* import { useEffect, useState } from 'react'; */
+/* import { ThemeStateProvider } from './context/themeMode'; */
 
 function App() {
 
-  const [themeMode, setThemeMode] = useState('light')
+/*   const [themeMode, setThemeMode] = useState('light')
 
   const lightMode = () => {
     setThemeMode('light')
@@ -32,14 +32,14 @@ function App() {
     myHTML.classList.remove('light', 'dark')
     myHTML.classList.add(themeMode)
   }, [themeMode])
-  
+   */
   return (
     <div className='dark:bg-gray-800'>
-      <ThemeStateProvider value={{themeMode, lightMode, darkMode}}>
+      {/* <ThemeStateProvider value={{themeMode, lightMode, darkMode}}> */}
         <Navbar />
         <Outlet />
         <Footer />
-      </ThemeStateProvider>
+     {/*  </ThemeStateProvider> */}
     </div>
     /*  <Router>
          <Navbar />
