@@ -2,7 +2,7 @@ import { Provider } from 'react-redux'
 import './App.css'
 import Counter from './components/Counter'
 import Navbar from './components/Navbar'
-import { store } from './app/Store'
+import { store } from './reduxapp/store'
 
 function App() {
 
