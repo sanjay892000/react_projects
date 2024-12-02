@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    amount: 5000,
+    amount: localStorage.getItem('amount') || 8476,
 }
 
 export const counterSlice = createSlice({
@@ -10,10 +10,12 @@ export const counterSlice = createSlice({
     reducers: {
         depositMoney: (state, action) => {
           state.amount += action.payload
+          localStorage.setItem('amount', state.amount)  // store the updated balance in local storage
         },
         withdrawMoney: (state, action) => {
           if(state.amount-action.payload>=0){
             state.amount -= action.payload
+            localStorage.setItem('amount', state.amount)  // store the updated balance in local storage
           }
           else{
             alert("Insufficient balance")
