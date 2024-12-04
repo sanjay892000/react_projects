@@ -11,7 +11,7 @@ function Navbar() {
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">counterApp</span>
                 </a>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Blance: <span>{balance}</span></button>
+                <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Blance: <span>{Number(balance)}</span></button>
                 </div>
             </div>
         </nav>
