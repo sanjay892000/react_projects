@@ -10,12 +10,12 @@ export const counterSlice = createSlice({
     reducers: {
         depositMoney: (state, action) => {
           state.amount += action.payload
-          localStorage.setItem('amount', state.amount)  // store the updated balance in local storage
+          localStorage.setItem('amount', state.amount)// store the updated balance in local storage
         },
         withdrawMoney: (state, action) => {
           if(state.amount-action.payload>=0){
             state.amount -= action.payload
-            localStorage.setItem('amount', state.amount)  // store the updated balance in local storage
+            localStorage.setItem('amount', state.amount) // store the updated balance in local storage
           }
           else{
             alert("Insufficient balance")
