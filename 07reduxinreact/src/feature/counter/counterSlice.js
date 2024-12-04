@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    amount: localStorage.getItem('amount') || 8476,
+    amount:Number(localStorage.getItem('amount') || 8476),
 }
 
 export const counterSlice = createSlice({
