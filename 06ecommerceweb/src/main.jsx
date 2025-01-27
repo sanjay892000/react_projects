@@ -8,6 +8,7 @@ import Mens from './components/ShopCategory.jsx'
 import Login from './components/Login.jsx'
 import Signup from './components/Signup.jsx'
 import ProductCard from './components/ProductCard';
+import ShopState from './shopContext/ShopState.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -19,27 +20,27 @@ const router = createBrowserRouter([{
     },
     {
       path: "/mens",
-      element: <Mens category={"mens"}/>
+      element: <Mens category={"mens"} />
     },
     {
       path: "/womens",
-      element: <Mens category={"womens"}/>
+      element: <Mens category={"womens"} />
     },
     {
       path: "/kids",
-      element: <Mens category={"kids"}/>
+      element: <Mens category={"kids"} />
     },
     {
       path: "/login",
-      element: <Login/>
+      element: <Login />
     },
     {
       path: "/signup",
-      element: <Signup/>
+      element: <Signup />
     },
     {
       path: "/yourcart",
-      element: <ProductCard/>
+      element: <ProductCard />
     }
   ]
 }])
@@ -47,7 +48,9 @@ const router = createBrowserRouter([{
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ShopState>
+      <RouterProvider router={router} />
+    </ShopState>
   </StrictMode>,
 
 )

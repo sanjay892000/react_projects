@@ -1,7 +1,11 @@
+
+import ItemsCard from './ItemsCard';
+import HeroPage from './HomePage/HeroPage';
+
 function Home() {
   return (
     <div>
-      home
+    
     </div>
   )
 }

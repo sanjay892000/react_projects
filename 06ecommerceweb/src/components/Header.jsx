@@ -13,7 +13,7 @@ function Header() {
             </div>
             <div className='flex justify-between items-center'>
                 <NavLink to="yourcart"><img src={CartLogo} alt="" /></NavLink>
-                <Link to="login" className='mx-7 text-xl text-gray-700 capitalize font-semibold border-2 rounded-lg bg-orange-300 py-2 px-5 border-solid border-orange-600' href="">login</Link>
+                <Link to="login" className='mx-7 text-xl text-gray-700 capitalize font-semibold border-2 rounded-lg bg-orange-300 py-1.5 px-5 border-solid border-orange-600 hover:bg-orange-600' href="">login</Link>
             </div>
         </header>
     )

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 function Footer() {
   return (
@@ -17,35 +17,35 @@ function Footer() {
                 <Link className="bg-red-600 h-10 w-10 rounded-full flex justify-center items-center" to="https://www.youtube.com/channel/UCifxJcmCzfNGOOkxvd0tR0g"><i className="fab fa-youtube text-xl"></i></Link>
             </div>
         </div>
-        <div className="flex justify-between items-center">
-            <ul className="">
-                <li className="">Company</li>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/mens">Mens</Link></li>
-                <li><Link to="/womens">Womens</Link></li>
-                <li><Link to="/kids">Kids</Link></li>
+        <div className="flex justify-between items-center w-screen flex-wrap">
+            <ul className="w-1/4 max-lg:w-1/4 max-md:w-1/2 max-sm:w-full">
+                <li className="my-2 capitalize text-gray-700 font-bold">Company</li>
+                <li className="my-2 capitalize text-gray-700"><NavLink className={({isActive})=>`${isActive? 'text-orange-600 font-semibold' : 'text-gray-700'}`} to="/">Home</NavLink></li>
+                <li className="my-2 capitalize text-gray-700"><NavLink className={({isActive})=>`${isActive? 'text-orange-600 font-semibold' : 'text-gray-700'}`} to="/mens">Mens</NavLink></li>
+                <li className="my-2 capitalize text-gray-700"><NavLink className={({isActive})=>`${isActive? 'text-orange-600 font-semibold' : 'text-gray-700'}`} to="/womens">Womens</NavLink></li>
+                <li className="my-2 capitalize text-gray-700"><NavLink className={({isActive})=>`${isActive? 'text-orange-600 font-semibold' : 'text-gray-700'}`} to="/kids">Kids</NavLink></li>
             </ul>
-            <ul className="">
-                <li className="link_name">Get to Know Us</li>
-                <li><Link to="/c/61554bfe801949ad7b9be4ff">About Us</Link></li>
-                <li><Link to="/c/61554bfe801949ad7b9be4ff">Careers</Link></li>
-                <li><Link to="/c/61554bfe801949ad7b9be4ff">Press Releases</Link></li>
-                <li><Link to="/c/61554bfe801949ad7b9be4ff">Prabhat Center Science</Link></li>
+            <ul className="w-1/4 max-lg:w-1/4 max-md:w-1/2 max-sm:w-ful">
+                <li className="my-2 capitalize text-gray-700 font-bold">Get to Know Us</li>
+                <li className="my-2 capitalize text-gray-700"><Link to="/c/61554bfe801949ad7b9be4ff">About Us</Link></li>
+                <li className="my-2 capitalize text-gray-700"><Link to="/c/61554bfe801949ad7b9be4ff">Careers</Link></li>
+                <li className="my-2 capitalize text-gray-700"><Link to="/c/61554bfe801949ad7b9be4ff">Press Releases</Link></li>
+                <li className="my-2 capitalize text-gray-700"><Link to="/c/61554bfe801949ad7b9be4ff">Prabhat Center Science</Link></li>
             </ul>
-            <ul className="">
-                <li className="">Make Money with Us</li>
-                <li><Link to="/c/61554bfe801949ad7b9be4ff">Sell on Prabhat Center</Link></li>
-                <li><Link to="/c/61554c2753bcf306407cb1bd">Protect & build your brand</Link></li>
-                <li><Link to="/c/61554c43d2a6b15f764aff36">Prabhat Global Selling</Link></li>
-                <li><Link to="c/61554c63dfd6a37d71449b5c">Advertise Your Product</Link></li>
+            <ul className="w-1/4 max-lg:w-1/4 max-md:w-1/2 max-sm:w-ful">
+                <li className="my-2 capitalize text-gray-700 font-bold">Make Money with Us</li>
+                <li className="my-2 capitalize text-gray-700"><Link to="/c/61554bfe801949ad7b9be4ff">Sell on Prabhat Center</Link></li>
+                <li className="my-2 capitalize text-gray-700"><Link to="/c/61554c2753bcf306407cb1bd">Protect & build your brand</Link></li>
+                <li className="my-2 capitalize text-gray-700"><Link to="/c/61554c43d2a6b15f764aff36">Prabhat Global Selling</Link></li>
+                <li className="my-2 capitalize text-gray-700"><Link to="c/61554c63dfd6a37d71449b5c">Advertise Your Product</Link></li>
             </ul>
-            <ul className="">
+            <ul className="w-1/4 max-lg:w-1/4 max-md:w-1/2 max-sm:w-ful">
                 <div className="">
-                    <li className="">Let Us Help You</li>
-                    <li><Link to="c/61554c63dfd6a37d71449b5c">Your Account</Link></li>
-                    <li><Link to="c/61554c63dfd6a37d71449b5c">Returns Center</Link></li>
-                    <li><Link to="c/61554c63dfd6a37d71449b5c">100% Purchase Protection</Link></li>
-                    <li><Link to="c/61554c63dfd6a37d71449b5c">Help</Link></li>
+                    <li className="my-2 capitalize text-gray-700 font-bold">Let Us Help You</li>
+                    <li className="my-2 capitalize text-gray-700"><Link to="c/61554c63dfd6a37d71449b5c">Your Account</Link></li>
+                    <li className="my-2 capitalize text-gray-700"><Link to="c/61554c63dfd6a37d71449b5c">Returns Center</Link></li>
+                    <li className="my-2 capitalize text-gray-700"><Link to="c/61554c63dfd6a37d71449b5c">100% Purchase Protection</Link></li>
+                    <li className="my-2 capitalize text-gray-700"><Link to="c/61554c63dfd6a37d71449b5c">Help</Link></li>
                 </div>
                 <li style={{ color: "#F7FFFF", width: "100" }}><Link to="https://sanjay892000.github.io/my-portfolio-web/">Created by Sanjay Kumar Singh</Link></li>
             </ul>
