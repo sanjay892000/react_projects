@@ -47,14 +47,14 @@ function PassGen() {
     genFun();
   }, [length, includeNumbers, includeSymbols]);
 
-  const {themeMode} = useMyTheme()
+  const { themeMode } = useMyTheme()
   //if change the dependency after then useEffect run & call the genFun
 
   return (
-    <div className='h-screen w-screen flex justify-center items-center bg-gray-800' style={{ backgroundColor: themeMode === 'light' ? 'rgb(243,244,246)' : 'rgb(31,41,55)',}}>
-      <div className="py-14 w-3/4 flex flex-col justify-center items-center bg-gray-700 rounded-md" style={{ backgroundColor: themeMode === 'light' ? 'rgb(229,231,235)' : 'rgb(55,65,81)',}}>
+    <div className='h-screen w-screen flex justify-center items-center bg-gray-800' style={{ backgroundColor: themeMode === 'light' ? 'rgb(243,244,246)' : 'rgb(31,41,55)', }}>
+      <div className="py-14 w-3/4 flex flex-col justify-center items-center bg-gray-700 rounded-md" style={{ backgroundColor: themeMode === 'light' ? 'rgb(229,231,235)' : 'rgb(55,65,81)', }}>
         <div className='flex flex-col justify-center items-center relative w-3/4'>
-          <input className="h-14 w-full my-10 outline-none px-5 py-1 bg-gray-100 rounded-md text-orange-500 text-2xl font-semibold" type="text" value={password} ref={passwordRef} style={{ backgroundColor: themeMode === 'light' ? 'rgb(243,244,246)' : 'rgb(31,41,55)',}} readOnly /><label className='bg-orange-400 hover:bg-orange-500 text-black active:text-white font-medium rounded-r-md cursor-pointer px-8 py-3.5 text-xl absolute right-0 ' onClick={copyPassword}>Copy</label></div>
+          <input className="h-14 w-full my-10 outline-none px-5 py-1 bg-gray-100 rounded-md text-orange-500 text-2xl font-semibold" type="text" value={password} ref={passwordRef} style={{ backgroundColor: themeMode === 'light' ? 'rgb(243,244,246)' : 'rgb(31,41,55)', }} readOnly /><label className='bg-orange-400 hover:bg-orange-500 text-black active:text-white font-medium rounded-r-md cursor-pointer px-8 py-3.5 text-xl absolute right-0 ' onClick={copyPassword}>Copy</label></div>
         <div className="my-3 w-full px-20 flex justify-evenly">
           <div><input className='mx-2 w-80' id='range' type="range" min={8} max={20} value={length} onChange={(e) => { setLength(e.target.value) }} />
             <label className='text-2xl text-orange-600' htmlFor="range">{length}</label></div>
