@@ -167,11 +167,11 @@ function Footer() {
                 </li>
 
                 <li>
-                  <Link to="graphics" className="text-gray-700 transition hover:text-gray-700/75" > Graphics Design </Link>
+                  <Link to="/services/graphics" className="text-gray-700 transition hover:text-gray-700/75" > Graphics Design </Link>
                 </li>
 
                 <li>
-                  <Link to="autocad" className="text-gray-700 transition hover:text-gray-700/75" > AutoCad </Link>
+                  <Link to="/services/autocad" className="text-gray-700 transition hover:text-gray-700/75" > AutoCad </Link>
                 </li>
 
                 <li>
