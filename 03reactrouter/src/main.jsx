@@ -10,6 +10,7 @@ import GitHub from './components/GitHub';
 import GitUser from './components/GitUser.jsx';
 import {gitFetchData} from './components/GitFetchData.js';
 import Login from './components/Login';
+import Error from './components/Error';
 
 /* const router = createBrowserRouter(
     createRoutesFromElements(
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: '/gituser/:userId',
        element:<GitUser/>
+       },
+      {
+        path: '*',
+       element:<Error/>
        }
     ]
   }
