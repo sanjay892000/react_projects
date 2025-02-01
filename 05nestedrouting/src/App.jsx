@@ -12,6 +12,8 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Error from './components/Error';
 import GitHub from './components/GitHub';
+import HomeServices from './components/HomeServices';
+import Team from './components/Team';
 
 
 function App() {
@@ -24,13 +26,15 @@ function App() {
           <Route path="learnmore" element={<p>We provide theoretical and practical knowledge to our students for skills development in detail.</p>} />
         </Route>
         <Route path="services" element={<Services />} >
-          <Route path="" element={<WebDev />} />
+          <Route path="" element={<HomeServices />} />
+          <Route path="webdevelopment" element={<WebDev />} />
           <Route path="graphics" element={<Graphics />} />
           <Route path="autocad" element={<AutoCad />} />
         </Route>
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="github" element={<GitHub />} />
+        <Route path="myteam" element={<Team />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Signup />} />
         <Route path="*" element={<Error />} />
