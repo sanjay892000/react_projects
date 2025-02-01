@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import sentiment from '../assets/sentiment.png'
+import analyst from '../assets/analysis.png'
 
 function Home() {
   return (
@@ -31,15 +33,15 @@ function Home() {
         </div>
 
         <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-          <img className="w-96" src="https://i.ibb.co/5BCcDYB/Remote2.png" alt="image1" />
+          <img className="w-96" src={sentiment} alt="image1" />
         </div>
       </aside>
 
       <div className="grid  place-items-center sm:mt-20">
-        <img className="sm:w-96 w-48" src="https://i.ibb.co/2M7rtLk/Remote1.png" alt="image2" />
+        <img className="sm:w-96 w-48" src={analyst} alt="image2" />
       </div>
 
-      <p className="text-center text-xl py-10 font-medium dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatem ut quisquam at cupiditate tempore praesentium voluptate, nihil rerum obcaecati provident eos ea eligendi odit ipsum dolore neque similique. Distinctio?</p>
+      <p className="text-center text-xl p-24 font-medium dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatem ut quisquam at cupiditate tempore praesentium voluptate, nihil rerum obcaecati provident eos ea eligendi odit ipsum dolore neque similique. Distinctio?</p>
     </div>
   )
 }
