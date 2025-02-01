@@ -61,7 +61,7 @@ function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    +44 1234567890
+                                    +91 6388774338
                                 </div>
                             </div>
 
@@ -83,7 +83,7 @@ function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    info@acme.org
+                                    sanjay892000@gmail.com
                                 </div>
                             </div>
                         </div>
