@@ -36,36 +36,36 @@ function Services() {
                                  New Batch Start</h1>
                             <span className='font-bold'>from 12 June</span>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
-                            <a rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm dark:text-rose-600">
-                                <Link to="webdevelopment">Read more</Link>
+                            <Link to="webdevelopment" rel="noopener noreferrer" className={({isActive})=>`${isActive? 'text-rose-600':'text-gray-800'} inline-flex items-center py-2 space-x-2 text-sm`}>
+                                <span>Read more</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                                 </svg>
-                            </a>
+                            </Link>
                         </div>
                         <div className="pt-6 pb-4 space-y-2">
                             <h1 className="text-3xl font-bold capitalize"><span className='text-rose-500'>Graphics Design </span>
                                  New Batch Start</h1>
                             <span className='font-bold'>from 12 June</span>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
-                            <a rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm dark:text-rose-600">
-                                <Link to="graphics">Read more</Link>
+                            <Link to="graphics" rel="noopener noreferrer" className={({isActive})=>`${isActive? 'text-rose-600':'text-gray-800'} inline-flex items-center py-2 space-x-2 text-sm`}>
+                                <span>Read more</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                                 </svg>
-                            </a>
+                            </Link>
                         </div>
                         <div className="pt-6 pb-4 space-y-2">
                             <h1 className="text-3xl font-bold capitalize"><span className='text-rose-500'>AutoCad </span>
                                  New Batch Start</h1>
                             <span className='font-bold'>from 12 June</span>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
-                            <a rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm dark:text-rose-600">
-                                <Link to="autocad">Read more</Link>
+                            <Link to="autocad" rel="noopener noreferrer" className={({isActive})=>`${isActive? 'text-rose-600':'text-gray-800'} inline-flex items-center py-2 space-x-2 text-sm`}>
+                                <span>Read more</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                                 </svg>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <Outlet />
