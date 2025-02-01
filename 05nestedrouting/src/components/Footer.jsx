@@ -133,7 +133,7 @@ function Footer() {
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <Link to="hello" className="text-gray-700 transition hover:text-gray-700/75" >
+                  <Link to="companyhistory" className="text-gray-700 transition hover:text-gray-700/75" >
                     Company History
                   </Link>
                 </li>
@@ -145,13 +145,13 @@ function Footer() {
                 </li>
 
                 <li>
-                  <Link to="hello" className="text-gray-700 transition hover:text-gray-700/75" >
+                  <Link to="employeehandbook" className="text-gray-700 transition hover:text-gray-700/75" >
                     Employee Handbook
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="hello" className="text-gray-700 transition hover:text-gray-700/75" > Careers </Link>
+                  <Link to="careers" className="text-gray-700 transition hover:text-gray-700/75" > Careers </Link>
                 </li>
               </ul>
             </div>
@@ -185,15 +185,15 @@ function Footer() {
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <Link to="hello" className="text-gray-700 transition hover:text-gray-700/75" > FAQs </Link>
+                  <Link to="faqs" className="text-gray-700 transition hover:text-gray-700/75" > FAQs </Link>
                 </li>
 
                 <li>
-                  <Link to="hello" className="text-gray-700 transition hover:text-gray-700/75" > Support </Link>
+                  <Link to="support" className="text-gray-700 transition hover:text-gray-700/75" > Support </Link>
                 </li>
 
                 <li>
-                  <Link to="hello"
+                  <Link to="livechat"
                     className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
 
                   >
@@ -299,7 +299,7 @@ function Footer() {
             <p className="text-sm text-gray-500">
               <span className="block sm:inline">All rights reserved.</span>
 
-              <Link to="hello"
+              <Link to="terms&conditions"
                 className="inline-block text-rose-600 underline transition hover:text-rose-600/75"
 
               >
@@ -308,7 +308,7 @@ function Footer() {
 
               <span>&middot;</span>
 
-              <Link to="hello"
+              <Link to="privacypolicy"
                 className="inline-block text-rose-600 underline transition hover:text-rose-600/75"
 
               >
