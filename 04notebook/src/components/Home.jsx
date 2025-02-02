@@ -31,7 +31,7 @@ function Home() {
                     Subscribe now for ore Updates
                 </strong>
 
-                <form className="mt-6">
+                <form className="mt-6 px-6">
                     <div className="relative max-w-lg">
                         <label className="sr-only" htmlFor="email"> Email </label>
 

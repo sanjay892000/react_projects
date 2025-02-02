@@ -17,14 +17,14 @@ function CreateNote() {
     }
 
     return (
-        <div className='flex flex-col items-center pb-16 bg-gray-100'>
+        <div className='flex px-6 flex-col items-center pb-16 bg-gray-100'>
             <div className="mx-auto pt-12 max-w-xl text-center">
                 <h1 className="text-3xl capitalize font-bold dark:text-gray-800 sm:text-5xl">
                     Create note with
                     <strong className="font-bold text-red-700 py-3 sm:block"> - safe and secure </strong>
                 </h1>
             </div>
-            <form onSubmit={addNoteFun} className="mt-6 w-1/2 mb-0 space-y-4 rounded-lg p-4 shadow-sm sm:p-6 lg:p-8">
+            <form onSubmit={addNoteFun} className="mt-6 w-1/2 max-lg:w-full mb-0 space-y-4 rounded-lg p-4 shadow-sm sm:p-6 lg:p-8">
 
                 <div>
                     <label htmlFor="title" className="">Title<span className='text-rose-500'>*</span></label>
@@ -60,16 +60,16 @@ function CreateNote() {
                     </div>
                 </fieldset>
 
-                <div className='flex mt-5 justify-between max-md:flex-col gap-5'>
+                <div className='flex mt-5 justify-between  gap-5'>
                     <button
                         type="submit"
-                        className="block max-md:w-full rounded-lg bg-rose-600 px-5 py-3 text-sm font-medium text-white"
+                        className="block max-sm:w-32 rounded-lg bg-rose-600 px-5 py-3 text-sm font-medium text-white"
                     >
                         Add Notes
                     </button>
                     <Link to="/notes"
                         type="submit"
-                        className="block max-md:w-full rounded-lg bg-rose-900 px-5 py-3 text-sm font-medium text-white"
+                        className="block max-sm:w-32 rounded-lg bg-rose-900 px-5 py-3 text-sm font-medium text-white"
                     >
                         Your Notes
                     </Link>

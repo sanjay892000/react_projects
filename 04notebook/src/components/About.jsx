@@ -13,11 +13,11 @@ function About() {
     },[])
     return (
         <section className="dark:bg-gray-100 px-12 md:px-6 dark:text-gray-800">
-            <div className='px-10 py-5 relative flex justify-end items-center'>
-                <img className='h-98 object-cover w-full' src={about} alt="" />
-                <div className='absolute right-0 pr-14 w-1/3 text-center'>
-                    <h1 className='text-5xl text-white font-lightbold'>Empowering Students</h1>
-                    <p className='mt-6 mb-8 text-white text-lg sm:mb-12'>An online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee</p>
+            <div className='lg:px-10 max-lg:px-0 py-5 relative flex justify-end max-lg:justify-center items-center'>
+                <img className='h-98 object-cover w-full max-lg:opacity-50' src={about} alt="" />
+                <div className='absolute lg:right-0 pr-14 w-1/3 max-lg:w-full max-lg:px-12 text-center'>
+                    <h1 className='text-5xl max-lg:text-3xl max-lg:text-black text-white font-lightbold'>Empowering Students</h1>
+                    <p className='mt-6 mb-8 max-lg:text-black text-white text-lg sm:mb-12'>An online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee</p>
                 </div>
             </div>
 
