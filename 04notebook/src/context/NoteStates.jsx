@@ -7,10 +7,13 @@ function NoteStates({children}) {
     const addNotes = (notes) => {
         setAllNotes([...allNotes, notes])
     }
+    const deleteNotes = (notes) => {
+        setAllNotes(allNotes.filter(note => note !== notes))
+    }
 
 
     return (
-        <noteContext.Provider value={{allNotes,addNotes}}>
+        <noteContext.Provider value={{allNotes,addNotes,deleteNotes}}>
          {children}
         </noteContext.Provider>
     )
