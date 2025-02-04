@@ -71,9 +71,9 @@ function Footer() {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-500 sm:text-center dark:text-white">
                         © 2023
-                        <a href="https://sanjayksingh.netlify.app/" className="hover:underline dark:text-white" target='_blank'>
+                        <sapn className="hover:underline dark:text-white">
                             Sanjay Singh
-                        </a>
+                        </sapn>
                         . All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
