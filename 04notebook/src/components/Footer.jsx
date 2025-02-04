@@ -15,7 +15,7 @@ function Footer() {
                         <span className="self-center text-2xl font-semibold">myNoteBook</span>
                     </Link>
                     <p className='mt-6 mb-8 pr-7 sm:mb-12'>An online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee <br />
-                        Created by <a href='https://sanjayksingh.netlify.app/' target='_blank' className='text-rose-500 font-semibold'>Sanjay Kumar Singh</a></p>
+                        Created by <span className='text-rose-500 font-semibold'>Sanjay Kumar Singh</span></p>
                 </div>
                 <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
                     <div className="space-y-3">
