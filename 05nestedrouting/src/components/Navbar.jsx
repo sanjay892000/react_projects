@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { useTheme } from '../contextapi/ThemeMode'
 
 function Navbar() {
+
+  const { theme, lightMode, darkMode } = useTheme()
+
+  useEffect(() => {
+  }, [theme])
+
+  const changeMode = () => {
+    document.body.classList.remove('dark', 'light')
+    if (theme === 'light') {
+      document.body.classList.add('dark')
+    } else {
+      document.body.classList.add('light')
+    }
+
+  }
+
   return (
     <header className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -22,40 +39,44 @@ function Navbar() {
             <nav aria-label="Global">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <NavLink to="/" className={({isActive})=>`${isActive? 'text-rose-600':'text-gray-500'} hover:text-rose-500 text-gray-500 transition font-bold`}> Home </NavLink>
+                  <NavLink to="/" className={({ isActive }) => `${isActive ? 'text-rose-600' : 'text-gray-500'} hover:text-rose-500 text-gray-500 transition font-bold`}> Home </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="services" className={({isActive})=>`${isActive? 'text-rose-600':'text-gray-500'} hover:text-rose-500 text-gray-500 transition font-bold`}> Services </NavLink>
+                  <NavLink to="services" className={({ isActive }) => `${isActive ? 'text-rose-600' : 'text-gray-500'} hover:text-rose-500 text-gray-500 transition font-bold`}> Services </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="about" className={({isActive})=>`${isActive? 'text-rose-600':'text-gray-500'} hover:text-rose-500 text-gray-500 transition font-bold`}> About </NavLink>
+                  <NavLink to="about" className={({ isActive }) => `${isActive ? 'text-rose-600' : 'text-gray-500'} hover:text-rose-500 text-gray-500 transition font-bold`}> About </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="contact" className={({isActive})=>`${isActive? 'text-rose-600':'text-gray-500'} hover:text-rose-500 text-gray-500 transition font-bold`}> Contact </NavLink>
+                  <NavLink to="contact" className={({ isActive }) => `${isActive ? 'text-rose-600' : 'text-gray-500'} hover:text-rose-500 text-gray-500 transition font-bold`}> Contact </NavLink>
                 </li>
                 <li>
-                  <NavLink to="github" className={({isActive})=>`${isActive? 'text-rose-600':'text-gray-500'} hover:text-rose-500 text-gray-500 transition font-bold`}> Github </NavLink>
+                  <NavLink to="github" className={({ isActive }) => `${isActive ? 'text-rose-600' : 'text-gray-500'} hover:text-rose-500 text-gray-500 transition font-bold`}> Github </NavLink>
                 </li>
               </ul>
             </nav>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
+            <div className="sm:flex sm:gap-7 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" onClick={changeMode}>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+              </svg>
+            </div>
             <div className="sm:flex sm:gap-4">
               <Link to="login"
                 className="rounded-md bg-rose-500 px-5 py-2.5 text-sm font-medium text-white shadow"
-              
+
               >
                 Login
               </Link>
-
               <div className="hidden sm:flex">
                 <Link to="register"
                   className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-rose-500"
-                
+
                 >
                   Register
                 </Link>

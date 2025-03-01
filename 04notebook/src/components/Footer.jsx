@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Footer() {
+const Footer = () => {
     return (
         <footer className="px-6 divide-y dark:bg-gray-100 dark:text-gray-800">
             <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">

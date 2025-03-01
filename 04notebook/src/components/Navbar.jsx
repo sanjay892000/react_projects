@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-function Navbar() {
+const Navbar =() =>{
     return (
         <div>
             <header className="p-4 dark:bg-gray-100 dark:text-gray-800">

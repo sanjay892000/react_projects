@@ -3,7 +3,7 @@ import noteImg from '../image/Bullet_journal.png'
 import { Link } from 'react-router-dom'
 import Reviews from './Reviews'
 import CreateNote from './CreateNote'
-function Home() {
+const Home = () => {
     return (
 
         <section className="dark:bg-gray-100 dark:text-gray-800">

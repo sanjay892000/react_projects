@@ -3,7 +3,7 @@ import NoteCard from './NoteCard'
 import { Link } from 'react-router-dom'
 import { useNoteContext } from '../context/noteContext'
 
-function Notes() {
+const Notes = () => {
 
   const { allNotes } = useNoteContext()
   console.log(allNotes)
